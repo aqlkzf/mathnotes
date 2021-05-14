@@ -7,15 +7,15 @@
 > - 一般可测函数积分的定义
 
 ## 1. 非负简单可测函数 lebesgue 积分的定义
-设 $ f\colon \mathbb{E} \to [0,+\infty] $是非负简单可测函数 ，则$f$有如下典范表达式：
+设 $f\colon \mathbb{E} \to [0,+\infty] $是非负简单可测函数 ，则$f$有如下典范表达式：
 $$f(x)=\sum_{n=1}^{n} a_{i}I{A_{i}}(x) \qquad \forall x \in E$$
 其中 $f(\mathbb{E})=\left\{ a_1,a_2,\cdots ,a_{N} \right\}  \subset [0,+\infty] ,\ \  \ \ \  \mathbb{E}_i=f ^{-1}(a_{i})   $
 $$
 \int_{\mathbb{E}}f(x)\, \mathrm{d}m \overset{\underset{\mathrm{def}}{}}{=}\sum_{n=1}^{N} a_{i}m(\mathbb{E}_{i})\,\ (\in [0,+\infty])
 $$
-## 非负可测函数Lebesgue积分的定义
+## 2. 非负可测函数Lebesgue积分的定义(1)
 设 $f\in \mathcal{MF}(\mathbb{E};[0,+\infty])$ 
-则由可测函数的结构定理，存在 $\mathbb{E}$上的简单可测函数列 $\left\{ \varphi_{n} \right\} _{n=1}^{\infty}$ ($\left\{ \varphi_{n} \right\}$在 $\mathbb{E} $上单调递增收敛至 $f$)
+则由可测函数的结构定理，存在 $\mathbb{E}$上的简单可测函数列 $\left\{ \varphi_{n} \right\} _{n=1}^{\infty}$ ($\left\{ \varphi_{n} \right\}$在 $\mathbb{E} $上单调递增收敛至 $ f $)
 于是根据非负简单可测函数积分的单调性有：  $\int_{\mathbb{E}}\varphi_n\leqslant \int_{\mathbb{E}}\varphi_{n+1}$
 从而$\left\{ \varphi_{n} \right\} _{n=1}^{\infty}$存在广义极限 $ \displaystyle \lim_{n \to \infty}\int_{\mathbb{E}}\varphi_n $
 $$
@@ -54,7 +54,6 @@ $$
  &=\alpha \sum_{j=1}^{m} b_{j}\mu(B_{j})\\
  &=\alpha\int_{\mathbb{X}}g\, \mathrm{d}\mu
 \end{aligned}
-
 $$
 >>>>在此式中再令$\alpha \to 1$，即得，
 $$
