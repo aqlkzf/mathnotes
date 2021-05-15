@@ -145,8 +145,16 @@ $$
 \lim_{n \to \infty} \int_\mathbb{E}g_n=\lim_{n \to \infty} \int_\mathbb{E}\left\vert f_n-f \right\vert=0 
 $$
 
-## 3.2Lebesgue控制收敛定理（更一般形式）
+### 3.2Lebesgue控制收敛定理（更一般形式）
 设$\left\{ f_n,n=1,2\cdots \right\}和f$均为可测函数，如果存在非负可积可测函数g使得对每个$n=1,2\cdots$，有$\left\vert f_n \right\vert \leqslant g  \qquad a.e.$,则
 $$
-f_n \xrightarrow{a.e.}f 或者f_n \xrightarrow{\mu}f\implies   
+f_n \xrightarrow{a.e.}f 或者f_n \xrightarrow{\mu}f \\ \implies  \lim_{n \to \infty} \int_\mathbb{E}\left\vert f_n(x)-f(x) \right\vert \, \mathrm{d}m=0 
+$$
+>几乎处处时证明同上，依测度收敛则可以找到其子列几乎处处收敛
+
+### 3.3推论 Lebesgue有界收敛定理
+设$\left\{ f_n,n=1,2\cdots \right\}$和$f$时有限测度空间$(\mathbb{X},\mathcal{F},\mu)$上的可测函数。  
+如果存在$M>0$使$f_n\leqslant M\qquad a.e.$,且有$f_n \xrightarrow{a.e.}f$或者$f_n \xrightarrow{\mu}f$,则
+$$
+\lim_{n\to \infty}\int_\mathbb{X} f_n\, \mathrm{d} \mu=\int_\mathbb{X}f\, \mathrm{d}\mu
 $$
